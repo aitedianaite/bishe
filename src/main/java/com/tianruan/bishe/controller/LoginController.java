@@ -7,6 +7,8 @@ import com.tianruan.bishe.utils.ResponseUtil.ResponseMessage;
 import com.tianruan.bishe.utils.ResponseUtil.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(description = "登陆注册接口")
 @RequestMapping("/administrators")
 public class LoginController {
+
+    private final Logger logger= LoggerFactory.getLogger(LoginController.class);
 
     @Autowired
     LoginService loginService;

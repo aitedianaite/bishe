@@ -22,8 +22,8 @@ import java.util.List;
 @EnableSwagger2
 public class SwaggerConfig {
     private String version;
-   @Value("${sop.swagger.host}")
-//   @Value("localhost:8083")
+//   @Value("${sop.swagger.host}")
+   @Value("123.56.134.181:8101")
     private String host;
     @Bean
     public Docket createRestApi() {
