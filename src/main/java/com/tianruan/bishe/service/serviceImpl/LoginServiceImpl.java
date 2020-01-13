@@ -13,6 +13,6 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public Integer register(Users users) {
-        return null;
+        return 1;
     }
 }
